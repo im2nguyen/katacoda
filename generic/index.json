@@ -21,7 +21,7 @@
     "uilayout": "terminal-iframe"
   },
   "backend": {
-    "imageid": "terraform",
+    "imageid": "hashicorp-hashistack",
     "port": "8200"
   }
 }
