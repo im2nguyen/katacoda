@@ -18,7 +18,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal",
+    "uilayout": "editor-terminal-split",
     "showdashboard": true,
     "dashboards": [
       { "name": "Vault UI", "port": 8200 }
