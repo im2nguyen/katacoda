@@ -1,6 +1,6 @@
 {
-  "pathwayTitle": "Learn HashiCorp Vault1",
-  "title": "Vault Playground - w/o Text Editor",
+  "pathwayTitle": "Learn HashiCorp Vault",
+  "title": "Vault Playground",
   "description": "HashiCorp Vault environment to explore Vault CLI",
   "difficulty": "beginner",
   "icon": "fa-vault",
