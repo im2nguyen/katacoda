@@ -1,5 +1,5 @@
 # Add Terraform Cloud config
-cat <<EOT >> ~/main.tf
+cat <<EOT >> ~/tutorial/main.tf
 // terraform {
 //   backend \"remote\" {
 //     organization = \"my-organization\"
@@ -10,7 +10,7 @@ cat <<EOT >> ~/main.tf
 // }
 EOT
 
-cat <<EOT >> ~/.terraformrc
+cat <<EOT >> ~/tutorial/.terraformrc
 credentials "app.terraform.io" {
   token = ""
 }

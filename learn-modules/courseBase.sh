@@ -10,9 +10,9 @@ echo -e "// terraform {
 //     }
 //   }
 // }
-\n$(cat ~/learn-terraform-modules/main.tf)" > ~/learn-terraform-modules/main.tf
+\n$(cat ~/tutorial/learn-terraform-modules/main.tf)" > ~/tutorial/learn-terraform-modules/main.tf
 
-cat <<EOT >> ~/.terraformrc
+cat <<EOT >> ~/tutorial/.terraformrc
 credentials "app.terraform.io" {
   token = ""
 }
