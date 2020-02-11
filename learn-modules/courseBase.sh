@@ -1,3 +1,7 @@
+# Install Terraform
+curl -O https://releases.hashicorp.com/terraform/0.12.20/terraform_0.12.20_linux_amd64.zip
+unzip terraform_0.12.20_linux_amd64.zip -d /usr/local/bin/
+
 # Clone terraform modules repo
 git clone https://github.com/hashicorp/learn-terraform-modules.git
 cd learn-terraform-modules
