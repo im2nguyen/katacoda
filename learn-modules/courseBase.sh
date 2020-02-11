@@ -1,5 +1,7 @@
 # Clone terraform modules repo
 git clone https://github.com/hashicorp/learn-terraform-modules.git
+cd learn-terraform-modules
+git checkout ec2-instances
 
 # Add Terraform Cloud config
 echo -e "// terraform {
