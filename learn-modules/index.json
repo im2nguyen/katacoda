@@ -1,6 +1,6 @@
 {
-  "title": "generic",
-  "description": "generic123",
+  "title": "Learn Terraform Modules",
+  "description": "Learn Terraform Modules",
   "difficulty": "Beginner",
   "time": "20",
   "details": {
@@ -11,17 +11,18 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "code": "courseBase.sh"
     },
     "finish": {
       "text": "finish.md"
     }
   },
   "environment": {
-    "uilayout": "terminal-iframe",
+    "uilayout": "editor-terminal",
     "showdashboard": true,
     "dashboards": [
-      { "name": "Vault UI", "port": 8200 }
+      { "name": "Terraform Cloud", "host": "https://app.terraform.io/app" }
     ],
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands version 0.1.\u001b[m\r\n"
   },
