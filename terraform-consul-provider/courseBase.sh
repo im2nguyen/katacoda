@@ -12,4 +12,7 @@ cd consul-playground
 # Run Docker Compose up (daemon)
 docker-compose up -d
 
+# Go back to workspace directory
+cd ..
+
 echo "Ready!"
