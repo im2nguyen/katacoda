@@ -34,6 +34,10 @@ Policies:
    00000000-0000-0000-0000-000000000001 - global-management
 ```
 
+If you see `Failed ACL bootstrapping: Unexpected response code: 500 (The ACL system is currently in legacy mode.)`,
+the Consul datacenter has not nominated a cluster leader yet. Please wait before
+rerunning the command.
+
 ## View Consul Agents using ACL Token
 The SecretID is your Consul Master ACL Token. To verify that this token works, run:
 `docker exec -it consul-playground_consul-server-1_1 consul members -token=<TOKEN>`{{execute}}
