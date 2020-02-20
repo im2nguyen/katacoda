@@ -1,4 +1,4 @@
-## Workspace
+## Overview of Workspace
 
 This is the workspace for **Getting Started with Terraform Consul Provider**.
 
@@ -13,6 +13,10 @@ This workspace contains the following:
 On initialization, this workspace should have ran `docker-compose up -d` which spins
 up the above services in the background. To view these instances, run `docker ps`{{execute}}.
 
+It takes about a minute after you see the `Ready` message for the Consul datacenter
+to nominate a cluster leader and for you to continue to the next step.
+
+## Retrieve Master ACL Token
 To retrieve the master ACL token, run `docker exec -it terraform-consul-playground_consul-server-1_1 consul acl bootstrap`{{execute}}.
 This runs the `consul acl bootstrap` command on one of Consul agents. The output should
 be similar to this:
@@ -27,6 +31,7 @@ Policies:
    00000000-0000-0000-0000-000000000001 - global-management
 ```
 
+## View Consul Agents using ACL Token
 The SecretID is your Consul Master ACL Token. To verify that this token works, run:
 `docker exec -it terraform-consul-playground_consul-server-1_1 consul members -token=<TOKEN>{{execute}}`
 replacing `<TOKEN>` with your Master ACL Token. If successful, the output should be 
@@ -42,6 +47,7 @@ aea8b638b48c  172.29.0.6:8301  alive   server  1.7.0  2         dc1  <all>
 e553a7b10918  172.29.0.4:8301  alive   client  1.7.0  2         dc1  <default>
 ```
 
+## Configure Consul UI with ACL Token
 Finally, to configure your Consul UI to use the ACL token, open the Consul UI (it 
 should be a tab in the terminal). Then, navigate to the ACL page using the menu at the top. 
 You should see a page like this:
