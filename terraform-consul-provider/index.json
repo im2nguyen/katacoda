@@ -16,30 +16,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "client": [
-        {
-          "file": "agent/default.json",
-          "target": "~/agent/"
-        },
-        {
-          "file": "server/agent-policy.hcl",
-          "target": "~/server/"
-        },
-        {
-          "file": "server/anonymous-policy.hcl",
-          "target": "~/server/"
-        },
-        {
-          "file": "server/default.json",
-          "target": "~/server/"
-        },
-        {
-          "file": "docker-compose.yml",
-          "target": "~/"
-        }
-      ]
     }
   },
   "environment": {
