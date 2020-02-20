@@ -1,4 +1,6 @@
 # Install Terraform and init config
+# Install unzip - Katacoda docker image doesn't have unzip
+apt-get install unzip
 cd ~
 curl -O https://releases.hashicorp.com/terraform/0.12.20/terraform_0.12.20_linux_amd64.zip
 unzip terraform_0.12.20_linux_amd64.zip -d /usr/local/bin/
