@@ -17,7 +17,7 @@ It takes about a minute after you see the `Ready` message for the Consul datacen
 to nominate a cluster leader and for you to continue to the next step.
 
 ## Retrieve Master ACL Token
-To retrieve the master ACL token, run `docker exec -it terraform-consul-playground_consul-server-1_1 consul acl bootstrap`{{execute}}
+To retrieve the master ACL token, run `docker exec -it consul-playground_consul-server-1 consul acl bootstrap`{{execute}}
 
 This runs the `consul acl bootstrap` command on one of Consul agents. The output should
 be similar to this:
@@ -34,7 +34,7 @@ Policies:
 
 ## View Consul Agents using ACL Token
 The SecretID is your Consul Master ACL Token. To verify that this token works, run:
-`docker exec -it terraform-consul-playground_consul-server-1_1 consul members -token=<TOKEN>`{{execute}}
+`docker exec -it consul-playground_consul-server-1 consul members -token=<TOKEN>`{{execute}}
 replacing `<TOKEN>` with your Master ACL Token. 
 
 If successful, the output should be 
