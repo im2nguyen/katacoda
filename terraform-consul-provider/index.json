@@ -6,8 +6,10 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "text": "overview.md"
+      },
+      {
+        "text": "substitution.md"
       }
     ],
     "intro": {
