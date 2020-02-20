@@ -11,13 +11,13 @@ This workspace contains the following:
 - Dashboard for counting service running on port :8080
 
 On initialization, this workspace should have ran `docker-compose up -d` which spins
-up the above services in the background. To view these instances, run `docker ps`{{execute}}.
+up the above services in the background. To view these instances, run `docker ps`{{execute}}
 
 It takes about a minute after you see the `Ready` message for the Consul datacenter
 to nominate a cluster leader and for you to continue to the next step.
 
 ## Retrieve Master ACL Token
-To retrieve the master ACL token, run `docker exec -it terraform-consul-playground_consul-server-1_1 consul acl bootstrap`{{execute}}.
+To retrieve the master ACL token, run `docker exec -it terraform-consul-playground_consul-server-1_1 consul acl bootstrap`{{execute}}
 
 This runs the `consul acl bootstrap` command on one of Consul agents. The output should
 be similar to this:
