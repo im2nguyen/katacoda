@@ -1,16 +1,16 @@
-## Localhost substitution
+## Localhost Substitution
 
 NOTE: If you are using Katacoda, Katacoda routes services using the following template:
 
-`https://[[HOST_SUBDOMAIN]]-[[PORT]]-[[KATACODA_HOST]].environments.katacoda.com`
+https://[[HOST_SUBDOMAIN]]-[[PORT]]-[[KATACODA_HOST]].environments.katacoda.com
 
 As a result, you should substitute any references to localhost to the following:
 
 | Learn Address   | Katacoda Address |
 | --------------  | ---------------- |
-| localhost:8500  | [[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com |
-| localhost:9001  | [[HOST_SUBDOMAIN]]-9001-[[KATACODA_HOST]].environments.katacoda.com |
-| localhost:8080  | [[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com |
+| localhost:8500  | `[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com` |
+| localhost:9001  | `[[HOST_SUBDOMAIN]]-9001-[[KATACODA_HOST]].environments.katacoda.com` |
+| localhost:8080  | `[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com` |
 
 Your `main.tf` file should be similar to:
 
@@ -18,7 +18,7 @@ Your `main.tf` file should be similar to:
 provider "consul" {
   address    = "[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com"
   datacenter = "dc1"
-  token      = "254cbfc6-cf26-7a60-4d40-c9b06af9ab75"
+  token      = "<ACL_TOKEN_HERE>"
 }
 
 # Register Consul Node - counting
