@@ -1,8 +1,6 @@
 ## Localhost Substitution
 
-NOTE: If you are using Katacoda, Katacoda routes services using the following template:
-
-https://[[HOST_SUBDOMAIN]]-[[PORT]]-[[KATACODA_HOST]].environments.katacoda.com
+NOTE: If you are using Katacoda, Katacoda uses a unique method to route its services.
 
 As a result, you should substitute any references to localhost to the following:
 
