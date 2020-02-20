@@ -46,10 +46,9 @@ Finally, to configure your Consul UI to use the ACL token, open the Consul UI (i
 should be a tab in the terminal). Then, navigate to the ACL page using the menu at the top. 
 You should see a page like this:
 
-/im2nguyen/scenarios/terraform-consul-provider/assets/logo-text-with-head.png
+/im2nguyen/scenarios/terraform-consul-provider/assets/consul-acl.png
 
-![Consul ACL Page][/consul-acl.png]
-![](https://education-yh.s3-us-west-2.amazonaws.com/screenshots/katacoda-vault-ui.png)
+![Consul ACL Page][/im2nguyen/scenarios/terraform-consul-provider/assets/consul-acl.png]
 
 Enter your Master ACL Token into the text box and hit Save. After refreshing your page,
 you should be able to view your Consul resources via the UI.
