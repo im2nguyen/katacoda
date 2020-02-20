@@ -1,5 +1,5 @@
 # Clone docker compose files
-git clone git@github.com:im2nguyen/terraform-consul-playground.git
+git clone https://github.com/im2nguyen/terraform-consul-playground.git
 cd terraform-consul-playground 
 
 # Run Docker Compose up (daemon)
