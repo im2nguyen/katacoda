@@ -18,6 +18,7 @@ to nominate a cluster leader and for you to continue to the next step.
 
 ## Retrieve Master ACL Token
 To retrieve the master ACL token, run `docker exec -it terraform-consul-playground_consul-server-1_1 consul acl bootstrap`{{execute}}.
+
 This runs the `consul acl bootstrap` command on one of Consul agents. The output should
 be similar to this:
 
@@ -33,8 +34,10 @@ Policies:
 
 ## View Consul Agents using ACL Token
 The SecretID is your Consul Master ACL Token. To verify that this token works, run:
-`docker exec -it terraform-consul-playground_consul-server-1_1 consul members -token=<TOKEN>{{execute}}`
-replacing `<TOKEN>` with your Master ACL Token. If successful, the output should be 
+`docker exec -it terraform-consul-playground_consul-server-1_1 consul members -token=<TOKEN>`{{execute}}
+replacing `<TOKEN>` with your Master ACL Token. 
+
+If successful, the output should be 
 similar to this:
 
 ```
@@ -52,7 +55,7 @@ Finally, to configure your Consul UI to use the ACL token, open the Consul UI (i
 should be a tab in the terminal). Then, navigate to the ACL page using the menu at the top. 
 You should see a page like this:
 
-![Consul ACL Page][/im2nguyen/scenarios/terraform-consul-provider/assets/consul-acl.png]
+![Consul ACL Page][https://i.imgur.com/KW0eHwM.png]
 
 Enter your Master ACL Token into the text box and hit Save. After refreshing your page,
 you should be able to view your Consul resources via the UI.
