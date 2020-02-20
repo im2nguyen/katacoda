@@ -10,6 +10,8 @@ This workspace contains the following:
 - Counting service running on port [:9001](https://[[HOST_SUBDOMAIN]]-9001-[[KATACODA_HOST]].environments.katacoda.com)
 - Dashboard for counting service running on port [:8080](https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com)
 
+These services can be open by clicking on their respective tabs in the terminal.
+
 On initialization, this workspace should have ran `docker-compose up -d` which spins
 up the above services in the background. To view these instances, run `docker ps`{{execute}}
 
@@ -51,9 +53,7 @@ e553a7b10918  172.29.0.4:8301  alive   client  1.7.0  2         dc1  <default>
 ```
 
 ## Configure Consul UI with ACL Token
-Finally, to configure your Consul UI to use the ACL token, open the Consul UI (it 
-should be a tab in the terminal or go to 
-https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/ui/dc1/acls/tokens). 
+Finally, to configure your Consul UI to use the ACL token, open the [Consul UI](https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/ui/dc1/acls/tokens). 
 Then, navigate to the ACL page using the menu at the top. You should see a page 
 like this:
 
