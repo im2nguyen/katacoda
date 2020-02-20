@@ -4,11 +4,11 @@ This is the workspace for **Getting Started with Terraform Consul Provider**.
 
 This workspace contains the following:
 
-- simple Consul datacenter running with ACL pre-configured:
+- simple Consul datacenter running with ACL pre-configured (UI on port [:8500](https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/ui)):
     - 3 Consul servers
     - 2 Consul clients
-- Counting service running on port :9001
-- Dashboard for counting service running on port :8080
+- Counting service running on port [:9001](https://[[HOST_SUBDOMAIN]]-9001-[[KATACODA_HOST]].environments.katacoda.com)
+- Dashboard for counting service running on port [:8080](https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com)
 
 On initialization, this workspace should have ran `docker-compose up -d` which spins
 up the above services in the background. To view these instances, run `docker ps`{{execute}}
@@ -19,8 +19,8 @@ to nominate a cluster leader and for you to continue to the next step.
 ## Retrieve Master ACL Token
 To retrieve the master ACL token, run `docker exec -it consul-playground_consul-server-1_1 consul acl bootstrap`{{execute}}
 
-This runs the `consul acl bootstrap` command on one of Consul agents. The output should
-be similar to this:
+This runs the `consul acl bootstrap` command on one of Consul agents. The output
+ should be similar to this:
 
 ```
 AccessorID:       aaf45cbf-2293-59f8-dacb-d473e35d111c
@@ -52,10 +52,12 @@ e553a7b10918  172.29.0.4:8301  alive   client  1.7.0  2         dc1  <default>
 
 ## Configure Consul UI with ACL Token
 Finally, to configure your Consul UI to use the ACL token, open the Consul UI (it 
-should be a tab in the terminal). Then, navigate to the ACL page using the menu at the top. 
-You should see a page like this:
+should be a tab in the terminal or go to 
+https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/ui/dc1/acls/tokens). 
+Then, navigate to the ACL page using the menu at the top. You should see a page 
+like this:
 
 ![Consul ACL Page](/im2nguyen/scenarios/terraform-consul-provider/assets/consul-acl.png)
 
-Enter your Master ACL Token into the text box and hit Save. After refreshing your page,
-you should be able to view your Consul resources via the UI.
+Enter your Master ACL Token into the text box and hit Save. After refreshing 
+your page, you should be able to view your Consul resources via the UI.
