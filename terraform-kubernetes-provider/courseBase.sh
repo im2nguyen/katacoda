@@ -15,13 +15,12 @@ mkdir home
 
 # copy kube + minikube configuration to ~ so it's more similar to normal working directory
 
-cp -r ~/.kube ~/home
-cp -r ~/.minikube ~/home
-
 export HOME=~/home
 cd ~
+cp -r ../.kube ~
+cp -r ../.minikube ~
 
 touch main.tf
 
-clear
+# clear
 echo "Ready!"
