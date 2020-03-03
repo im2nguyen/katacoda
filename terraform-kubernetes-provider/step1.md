@@ -6,6 +6,7 @@ This workspace contains a minikube instance and preconfigured `kubectl`.
 
 ## Manual Provider Configuration
 To view your Kubernetes configuration, run:
+
 `cat ~/.kube/config`{{execute}}
 
 These values can, then, be used to manually configure your provider. The 
@@ -17,7 +18,8 @@ provider "kubernetes" {
   load_config_file = "false"
 
   host = "HOST_NAME_HERE"
-
+  
+  # Configured for Katacoda Minikube
   client_certificate     = file("~/.minikube/client.crt")
   client_key             = file("~/.minikube/client.key")
   cluster_ca_certificate = file("~/.minikube/ca.crt")
