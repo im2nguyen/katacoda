@@ -15,9 +15,9 @@ mkdir home
 
 # copy kube + minikube configuration to ~ so it's more similar to normal working directory
 
-cp ~/.kube ~/home
-cp -r ~/.minikube ~/home
 export HOME=~/home
+cp -r ./.kube ~
+cp -r ./.minikube ~
 cd ~
 
 touch main.tf
