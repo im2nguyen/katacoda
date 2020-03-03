@@ -15,7 +15,7 @@ mkdir home
 
 # copy kube + minikube configuration to ~ so it's more similar to normal working directory
 
-cp ~/.kube/config home/.kube/config
+cp ~/.kube/. home/.kube/.kube
 cp -r ~/.minikube/. ~/home/.minikube
 export HOME=~/home
 cd ~
