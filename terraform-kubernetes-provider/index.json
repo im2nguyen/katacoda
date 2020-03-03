@@ -27,10 +27,6 @@
         "port": 30000
       },
       {
-        "name": "Grafana Dashboard",
-        "port": 30002
-      },
-      {
         "name": "NGINX Deployment",
         "port": 30201
       }
