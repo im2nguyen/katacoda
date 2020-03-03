@@ -26,60 +26,8 @@ provider "kubernetes" {
 }
 </pre>
 
-To initialize Terraform, run `terraform init`. This will download and configure
+To initialize Terraform, run `terraform init`{{execute}}. This will download and configure
 the Terraform Kubernetes Provider.
-
-## Deploying NGINX on Kubernetes Cluster 
-
-<pre class="file" data-filename="main.tf" data-target="append">
-resource "kubernetes_deployment" "nginx" {
-  metadata {
-    name = "scalable-nginx-example"
-    labels = {
-      App = "ScalableNginxExample"
-    }
-  }
-
-  spec {
-    replicas = 2
-    selector {
-      match_labels = {
-        App = "ScalableNginxExample"
-      }
-    }
-    template {
-      metadata {
-        labels = {
-          App = "ScalableNginxExample"
-        }
-      }
-      spec {
-        container {
-          image = "nginx:1.7.8"
-          name  = "example"
-
-          port {
-            container_port = 80
-          }
-
-          resources {
-            limits {
-              cpu    = "0.5"
-              memory = "512Mi"
-            }
-            requests {
-              cpu    = "250m"
-              memory = "50Mi"
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-</pre>
-
 
 ## Deploying NGINX on Kubernetes Cluster 
 
