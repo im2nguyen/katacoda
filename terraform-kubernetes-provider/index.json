@@ -1,6 +1,6 @@
 {
-  "title": "Learn Terraform Modules",
-  "description": "Learn Terraform Modules",
+  "title": "Deploy on Kubernetes using Terraform",
+  "description": "Learn how to deploy an NGINX deployment and service using Terraform",
   "difficulty": "Beginner",
   "time": "20",
   "details": {
