@@ -12,8 +12,7 @@ curl -O https://releases.hashicorp.com/terraform/0.12.20/terraform_0.12.20_linux
 unzip terraform_0.12.20_linux_amd64.zip -d /usr/local/bin/
 
 mkdir home
-
-# copy kube + minikube configuration to ~ so it's more similar to normal working directory
-
 export HOME=~/home
 cd ~
+
+touch main.tf
