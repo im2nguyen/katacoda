@@ -17,10 +17,3 @@ mkdir home
 
 export HOME=~/home
 cd ~
-cp -r ../.kube ~
-cp -r ../.minikube ~
-
-touch main.tf
-
-# clear
-echo "Ready!"
