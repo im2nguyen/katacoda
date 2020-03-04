@@ -19,16 +19,26 @@ provider "consul" {
   token      = "ACL_TOKEN_HERE"
 }
 
-# Register Consul Node - counting
+# Register external node - counting
 resource "consul_node" "counting" {
   name    = "counting"
   address = "[[HOST_SUBDOMAIN]]-9001-[[KATACODA_HOST]].environments.katacoda.com"
+
+  meta = {
+    "external-node"  = "true"
+    "external-probe" = "true"
+  }
 }
 
-# Register Consul Node - dashboard
+# Register external node - dashboard
 resource "consul_node" "dashboard" {
   name    = "dashboard"
   address = "[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com"
+
+  meta = {
+    "external-node"  = "true"
+    "external-probe" = "true"
+  }
 }
 
 # Register Counting Service
