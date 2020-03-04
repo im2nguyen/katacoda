@@ -10,13 +10,13 @@ As a result, you should substitute any references to localhost to the following:
 | localhost:9001  | `[[HOST_SUBDOMAIN]]-9001-[[KATACODA_HOST]].environments.katacoda.com` |
 | localhost:8080  | `[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com` |
 
-Your `main.tf` file should be similar to:
+Remember to substitute `ACL_TOKEN_HERE` with your master ACL token. Your `main.tf` file should be similar to:
 
 <pre class="file" data-filename="main.tf" data-target="replace"># Configure the Consul provider
 provider "consul" {
   address    = "[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com"
   datacenter = "dc1"
-  token      = "<ACL_TOKEN_HERE>"
+  token      = "ACL_TOKEN_HERE"
 }
 
 # Register Consul Node - counting

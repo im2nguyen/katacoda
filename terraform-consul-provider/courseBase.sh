@@ -17,4 +17,6 @@ docker-compose up -d
 # Go back to workspace directory
 cd ..
 
+clear
+
 echo "Ready!"
