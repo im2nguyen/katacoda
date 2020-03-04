@@ -3,6 +3,7 @@
   "description": "Getting Started with Terraform Consul Provider",
   "difficulty": "Advanced",
   "time": "20",
+  "icon": "fa-consul",
   "details": {
     "steps": [
       {
