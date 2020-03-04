@@ -47,12 +47,6 @@ resource "consul_service" "counting" {
     method                            = "GET"
     interval                          = "5s"
     timeout                           = "1s"
-    deregister_critical_service_after = "30s"
-
-    header {
-      name  = "foo"
-      value = ["bar"]
-    }
   }
 }
 
@@ -72,12 +66,6 @@ resource "consul_service" "dashboard" {
     method                            = "GET"
     interval                          = "5s"
     timeout                           = "1s"
-    deregister_critical_service_after = "30s"
-
-    header {
-      name  = "foo"
-      value = ["bar"]
-    }
   }
 }
 
