@@ -3,6 +3,7 @@
   "description": "Getting Started Terraform",
   "difficulty": "Beginner",
   "time": "20",
+  "icon": "fa-terraform",
   "details": {
     "steps": [
       {
@@ -22,7 +23,10 @@
     "uilayout": "editor-terminal",
     "showdashboard": true,
     "dashboards": [
-      { "name": "Terraform Cloud", "href": "https://app.terraform.io/app" }
+      {
+        "name": "Terraform Cloud",
+        "href": "https://app.terraform.io/app"
+      }
     ],
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands version 0.1.\u001b[m\r\n"
   },
