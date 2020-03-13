@@ -7,11 +7,12 @@ apt-get install unzip
 cd ..
 curl -O https://releases.hashicorp.com/terraform/0.12.20/terraform_0.12.20_linux_amd64.zip
 unzip terraform_0.12.20_linux_amd64.zip -d /usr/local/bin/
-cd ~
 
 # Clone docker compose files
-git clone https://github.com/hashicorp/getting-started-terraform-consul-provider .
-cd consul-playground 
+git clone https://github.com/hashicorp/getting-started-terraform-consul-provider
+mv getting-started-terraform-consul-provider/* ~
+
+cd ~/consul-playground 
 
 # Run Docker Compose up (daemon)
 docker-compose up -d
