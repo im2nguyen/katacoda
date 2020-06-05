@@ -48,7 +48,7 @@ Since Vault and Consul are enabled, you should see 5 nodes.
 
 Run the following command — it forwards port :8500 (Consul UI) to port :8500, allowing you to access it on KataCoda's port 8500.
 
-`kubectl --kubeconfig=kubeconfig -n hashicorp-learn port-forward consul-server-0 8500:8500`{{execute}} 
+`kubectl --kubeconfig=kubeconfig -n hashicorp-learn port-forward --address 0.0.0.0 consul-server-0 8500:8500`{{execute}} 
 
 Go to `[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com` to access the Consul UI.
 
@@ -58,7 +58,7 @@ Go to `[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com` to a
 
 Run the following command — it forwards port :8200 (Vault UI) to port :8200, allowing you to access it on KataCoda's port 8200.
 
-`kubectl --kubeconfig=kubeconfig -n hashicorp-learn port-forward hashicorp-learn-vault-0 8200:8200`{{execute T2}}
+`kubectl --kubeconfig=kubeconfig -n hashicorp-learn port-forward --address 0.0.0.0 hashicorp-learn-vault-0 8200:8200`{{execute T2}}
 
 Go to `[[HOST_SUBDOMAIN]]-8200-[[KATACODA_HOST]].environments.katacoda.com` to access the Vault UI.
 
