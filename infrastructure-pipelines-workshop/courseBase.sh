@@ -10,9 +10,6 @@ cd ~
 curl -O https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
 unzip terraform_0.12.26_linux_amd64.zip -d /usr/local/bin/
 
-mkdir home
-cd ~/home
-
 touch main.tf
 
 clear 
