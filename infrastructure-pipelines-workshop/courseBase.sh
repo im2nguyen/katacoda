@@ -14,3 +14,7 @@ mkdir home
 cd ~/home
 
 touch main.tf
+
+clear 
+
+echo "Katacoda terminal configured."
