@@ -13,8 +13,8 @@ These will be your workspaces for the duration of this workshop.
 ## Configure Kubernetes workspace
 
 Fork the [Learn Terraform Pipelines K8s repository](https://github.com/hashicorp/learn-terraform-pipelines-k8s). Replace the `organization` and `workspaces` value in [`main.tf`](https://github.com/hashicorp/learn-terraform-pipelines-k8s/blob/master/main.tf). 
-- `organization`: "infrastructure-pipelines-workshop"
-- `workspaces`  : "{firstName}-{lastInitial}-k8s"
+- `organization = "infrastructure-pipelines-workshop"`
+- `workspaces = "{firstName}-{lastInitial}-k8s"`
 
 ```hcl
 terraform {
