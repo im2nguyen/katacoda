@@ -94,14 +94,15 @@ Select "Include submodules on clone" then click on "Update VCS settings". This w
 Next, click on "Variables". Your Terraform Variables should already be set for you. These correspond with the variables in [`variables.tf`](https://github.com/hashicorp/learn-terraform-pipelines-consul/blob/master/variables.tf). Verify your variables have been set correctly.
 
 #### Terraform Variables
-- **release_name** — Helm Release name for Consul chart<br/>
-  This should be set to `hashicorp-learn`. Your Vault pods will start with this release name.
+
 - **namespace** — Kubernetes Namespace to deploy the Consul Helm chart<br/>
   This should be set to `hashicorp-learn`. You will use this to access your Consul and Vault instances later.
-- **cluster_workspace** — Workspace that created the Kubernetes cluster<br/>
-  This should be set to `{firstName}-{lastInitial}-k8s` (`john-d-k8s`).
 - **organization** - Organization of workspace that created the Kubernetes cluster<br/>
   This should be set to `infrastructure-pipelines-workshop`.
+- **release_name** — Helm Release name for Consul chart<br/>
+  This should be set to `hashicorp-learn`. Your Vault pods will start with this release name.
+- **cluster_workspace** — Workspace that created the Kubernetes cluster<br/>
+  This should be set to `{firstName}-{lastInitial}-k8s` (`john-d-k8s`).
 
 ### Enable run triggers 
 
