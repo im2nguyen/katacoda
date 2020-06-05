@@ -50,7 +50,7 @@ Run the following command — it forwards port :8500 (Consul UI) to port :8500, 
 
 `kubectl --kubeconfig=kubeconfig -n hashicorp-learn port-forward consul-server-0 8500:8500`{{execute}} 
 
-Click on [[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com to access the Consul UI.
+Go to `[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com` to access the Consul UI.
 
 > **Note:** The Consul UI does not show Vault in the list of services because its service_registration stanza in the Helm chart defaults to Kubernetes. However, Vault is still configured to use Consul as a backend.
 
@@ -58,8 +58,8 @@ Click on [[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com to 
 
 Run the following command — it forwards port :8200 (Vault UI) to port :8200, allowing you to access it on KataCoda's port 8200.
 
-`kubectl --kubeconfig=kubeconfig -n hashicorp-learn port-forward hashicorp-learn-vault-0 8200:8200`{{execute}} 
+`kubectl --kubeconfig=kubeconfig -n hashicorp-learn port-forward hashicorp-learn-vault-0 8200:8200`{{execute T2}}
 
-Click on [[HOST_SUBDOMAIN]]-8200-[[KATACODA_HOST]].environments.katacoda.com to access the Vault UI.
+Go to `[[HOST_SUBDOMAIN]]-8200-[[KATACODA_HOST]].environments.katacoda.com` to access the Vault UI.
 
 > **Note:** The Vault pods have warnings because it’s sealed. To learn how to unseal the Vault instance, reference the [CLI initialize and unseal documentation for Vault](https://www.vaultproject.io/docs/platform/k8s/helm/run#initialize-and-unseal-vault). Do **not** do this in the workshop.
