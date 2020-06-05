@@ -145,12 +145,13 @@ Select "Include submodules on clone" then click on "Update VCS settings". This w
 Next, click on "Variables". Your Terraform Variables should already be set for you. These correspond with the variables in [`variables.tf`](https://github.com/hashicorp/learn-terraform-pipelines-consul/blob/master/variables.tf). Verify your variables have been set correctly.
 
 #### Terraform Variables
-- **cluster_workspace** — Terraform Cloud Workspace for the Kubernetes cluster.
-  This should be set to `{firstName}-{lastInitial}-k8s` (`john-d-k8s`).
-- **consul_workspace** —Terraform Cloud Workspace for the Consul cluster. 
-  This should be set to `{firstName}-{lastInitial}-consul` (`john-d-consul`).
+
 - **organization** — Organization of workspace that created the Kubernetes cluster
   This should be set to `infrastructure-pipelines-workshop`.
+- **consul_workspace** —Terraform Cloud Workspace for the Consul cluster. 
+  This should be set to `{firstName}-{lastInitial}-consul` (`john-d-consul`).
+- **cluster_workspace** — Terraform Cloud Workspace for the Kubernetes cluster.
+  This should be set to `{firstName}-{lastInitial}-k8s` (`john-d-k8s`).
 
 ### Enable run triggers 
 
