@@ -2,11 +2,15 @@
 
 Now that you have deployed a Vault instance using Consul as a backend on a GKE cluster, you will connect to your Kubernetes cluster using `kubectl` to access the respective instances.
 
-## Configure kubectl
+## Configure terraform CLI
 
 First, login to Terraform Cloud using the CLI.
 
-`terraform init`{{execute}} 
+`terraform login`{{execute}} 
+
+It should prompt you to visit a link and paste a token. Copy the API token from Terraform Cloud, then paste it into the terminal. Hit enter to confirm. The terminal will not display the token, so only paste your token once.
+
+## Configure kubectl
 
 Then, add the following configuration to your KataCoda `main.tf` file. Replace the `organization` and `workspaces` value in [`main.tf`](https://github.com/hashicorp/learn-terraform-pipelines-k8s/blob/master/main.tf). 
 - `organization`: "infrastructure-pipelines-workshop"
@@ -25,6 +29,10 @@ terraform {
   }
 }
 </pre>
+
+Then, initialize your Terraform workspace.
+
+`terraform init`{{execute}} 
 
 Run the following command. It will save your Kubernetes workspace's `kubeconfig` output value into a file named `kubeconfig`. This will allow you to connect to your cluster.
 
