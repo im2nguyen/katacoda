@@ -42,16 +42,19 @@ Next, click on "Variables". Both your Terraform Variables and Environment Variab
 #### Terraform Variables
 - **region** — GCP region to deploy clusters<br/>
   This should be set to `europe-west4`. For a full list of GCP regions, refer to [Google’s Region and Zones documentation](https://cloud.google.com/compute/docs/regions-zones).
-- **cluster_name** — Name of Kubernetes cluster<br/>
-  This should be set to `tfc-pipelines`.
-- **google_project** — Google Project to deploy cluster<br/>
-  This should be set to `{firstName}-{lastInitial}-{randomString}`.
-- **username** — Username for Kubernetes cluster<br/>
-  This can be anything, but defaults to `hashicorp`.
 - **password** — Password for Kubernetes cluster<br/>
   This can be anything over 16 characters, but defaults to `infrastructurepipelines`. This should have been marked **sensitive**. Terraform will set this when it creates your Kubernetes cluster and will distribute it as necessary when creating your Consul and Vault clusters. You do not need to manually input this value again.
 - **enable_consul_and_vault** — Enable Consul and Vault for the secrets cluster<br/>
   This should be set to **false**. This variable dictates whether Consul and Vault should be deployed on your Kubernetes cluster.
+- **username** — Username for Kubernetes cluster<br/>
+  This can be anything, but defaults to `hashicorp`.
+- **google_project** — Google Project to deploy cluster<br/>
+  This should be set to `{firstName}-{lastInitial}-{randomString}`.
+- **cluster_name** — Name of Kubernetes cluster<br/>
+  This should be set to `tfc-pipelines`.
+
+
+
 
 #### Environment Variables
 - **GOOGLE_CREDENTIALS** — Flattened JSON of your GCP credentials.<br/>
