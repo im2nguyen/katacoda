@@ -45,7 +45,7 @@ Next, click on "Variables". Both your Terraform Variables and Environment Variab
 - **password** — Password for Kubernetes cluster<br/>
   This can be anything over 16 characters, but defaults to `infrastructurepipelines`. This should have been marked **sensitive**. Terraform will set this when it creates your Kubernetes cluster and will distribute it as necessary when creating your Consul and Vault clusters. You do not need to manually input this value again.
 - **enable_consul_and_vault** — Enable Consul and Vault for the secrets cluster<br/>
-  This should be set to **false**. This variable dictates whether Consul and Vault should be deployed on your Kubernetes cluster.
+  This should be set to `false`. This variable dictates whether Consul and Vault should be deployed on your Kubernetes cluster.
 - **username** — Username for Kubernetes cluster<br/>
   This can be anything, but defaults to `hashicorp`.
 - **google_project** — Google Project to deploy cluster<br/>
