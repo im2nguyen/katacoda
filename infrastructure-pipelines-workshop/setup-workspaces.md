@@ -12,7 +12,7 @@ These will be your workspaces for the duration of this workshop.
 
 ## Configure Kubernetes workspace
 
-Fork the [Learn Terraform Pipelines K8s repository](https://github.com/hashicorp/learn-terraform-pipelines-k8s). Replace the `organization` and `workspaces` value in [`main.tf`](https://github.com/hashicorp/learn-terraform-pipelines-k8s/blob/master/main.tf). 
+Fork the [Learn Terraform Pipelines K8s repository](https://github.com/hashicorp/learn-terraform-pipelines-k8s). Replace the `organization` and `workspaces` values in [`main.tf`](https://github.com/hashicorp/learn-terraform-pipelines-k8s/blob/master/main.tf). 
 - `organization = "infrastructure-pipelines-workshop"`
 - `workspaces = "{firstName}-{lastInitial}-k8s"`
 
@@ -64,9 +64,9 @@ You have successfully configured your Kubernetes workspace. Terraform cloud will
 
 ## Configure Consul workspace
 
-Fork the [Learn Terraform Pipelines Consul repository](https://github.com/hashicorp/learn-terraform-pipelines-consul). Replace the `organization` and `workspaces` value in [`main.tf`](https://github.com/hashicorp/learn-terraform-pipelines-consul/blob/master/main.tf). 
-- `organization`: "infrastructure-pipelines-workshop"
-- `workspaces`  : "{firstName}-{lastInitial}-consul"
+Fork the [Learn Terraform Pipelines Consul repository](https://github.com/hashicorp/learn-terraform-pipelines-consul). Replace the `organization` and `workspaces` values in [`main.tf`](https://github.com/hashicorp/learn-terraform-pipelines-consul/blob/master/main.tf). 
+- `organization = "infrastructure-pipelines-workshop"`
+- `workspaces = "{firstName}-{lastInitial}-consul"`
 
 ```hcl
 terraform {
@@ -115,9 +115,9 @@ You have successfully configured your Consul workspace. The pipeline will retrie
 
 ## Configure Vault workspace
 
-Fork the [Learn Terraform Pipelines Vault repository](https://github.com/hashicorp/learn-terraform-pipelines-vault). Replace the `organization` and `workspaces` value in [`main.tf`](https://github.com/hashicorp/learn-terraform-pipelines-vault/blob/master/main.tf). 
-- `organization`: "infrastructure-pipelines-workshop"
-- `workspaces`  : "{firstName}-{lastInitial}-vault"
+Fork the [Learn Terraform Pipelines Vault repository](https://github.com/hashicorp/learn-terraform-pipelines-vault). Replace the `organization` and `workspaces` values in [`main.tf`](https://github.com/hashicorp/learn-terraform-pipelines-vault/blob/master/main.tf). 
+- `organization = "infrastructure-pipelines-workshop"`
+- `workspaces = "{firstName}-{lastInitial}-vault"`
 
 ```hcl
 terraform {
