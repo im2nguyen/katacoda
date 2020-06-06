@@ -2,11 +2,15 @@
 
 Now that you have deployed a Vault instance using Consul as a backend on a GKE cluster, you will connect to your Kubernetes cluster using `kubectl` to access the respective instances.
 
-## Configure terraform CLI
+## Login with the Terraform CLI
 
 First, login to Terraform Cloud using the CLI.
 
 `terraform login`{{execute}} 
+
+The command output will ask you if you want to confirm that you want to generate a token and store it. Confirm when it prompts you. 
+
+`yes`{{execute}} 
 
 It should prompt you to visit a link and paste a token. Copy the API token from Terraform Cloud, then paste it into the terminal. Hit enter to confirm. The terminal will not display the token, so only paste your token once.
 
