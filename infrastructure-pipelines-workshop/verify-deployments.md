@@ -12,13 +12,17 @@ The command output will ask you if you want to confirm that you want to generate
 
 `yes`{{execute}} 
 
-It should prompt you to visit a link and paste a token. Copy the API token from Terraform Cloud, then paste it into the terminal. Hit enter to confirm. The terminal will not display the token, so only paste your token once.
+Terraform will prompt you to visit a link in the output. 
+
+Follow this link and generate a new token in Terraform cloud. 
+
+Copy the API token from Terraform Cloud and then paste it into the Katacoda terminal and press enter to confirm. The terminal will not display the token, so only paste your token once.
 
 ## Configure kubectl
 
-Then, add the following configuration to your KataCoda `main.tf` file. Replace the `organization` and `workspaces` value in [`main.tf`](https://github.com/hashicorp/learn-terraform-pipelines-k8s/blob/master/main.tf). 
-- `organization`: "infrastructure-pipelines-workshop"
-- `workspaces`  : "{firstName}-{lastInitial}-k8s" 
+Add the following configuration to your KataCoda `main.tf` file, replacing the `workspaces` value in [`main.tf`](https://github.com/hashicorp/learn-terraform-pipelines-k8s/blob/master/main.tf). 
+
+- `workspaces = "{firstName}-{lastInitial}-k8s"` 
 
 This will establish a connection to your Kubernetes workspace. 
 
