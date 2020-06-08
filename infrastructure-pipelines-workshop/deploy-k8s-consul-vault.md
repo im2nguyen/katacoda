@@ -1,12 +1,8 @@
 ## Deploy Kubernetes, Consul, and Vault
 
-Now that you have successfully configured all three workspaces (Kubernetes, Consul, and Vault), you can deploy your Kubernetes cluster, Consul instance and Vault instance.
+Now that you have successfully configured all three workspaces (Kubernetes, Consul, and Vault), you can deploy Consul instance and Vault instance.
 
-## Deploy Kubernetes cluster
-
-Select your Kubernetes workspace and click "Queue Plan". If the plan is successful, Terraform cloud will display a notice that a run will automatically queue a plan in the Consul workspace, and ask you to confirm and apply.
-
-Click "Confirm & Apply" to apply this configuration. This process should take about 10 minutes to complete.
+Verify that your Kubernetes cluster has been provisioned before starting this guide.
 
 ## Enable Consul and Vault
 

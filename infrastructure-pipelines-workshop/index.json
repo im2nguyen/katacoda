@@ -7,8 +7,16 @@
   "details": {
     "steps": [
       {
-        "title": "Setup Terraform Cloud workspaces",
-        "text": "setup-workspaces.md"
+        "title": "Setup Kubernetes workspace",
+        "text": "setup-k8s-workspace.md"
+      },
+      {
+        "title": "Setup Consul workspace",
+        "text": "setup-consul-workspace.md"
+      },
+      {
+        "title": "Setup Vault workspace",
+        "text": "setup-vault-workspace.md"
       },
       {
         "title": "Deploy Kubernetes, Consul and Vault",
