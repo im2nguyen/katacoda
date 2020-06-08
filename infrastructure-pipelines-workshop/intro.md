@@ -1,11 +1,13 @@
 This is the workspace for the Terraform **Infrastructure Pipelines Workshop** and contains the latest version of Terraform CLI and kubectl.
 
-This workshop comprises of four main steps, estimated to take a total of 45 minutes. The first two steps will be done using Terraform Cloud and GitHub.
+This workshop comprises of six main steps, estimated to take a total of 45 minutes. The first 4 steps will be done using Terraform Cloud and GitHub.
 
-1. Setup Terraform Cloud workspaces
-2. Deploy Kubernetes, Consul and Vault
-3. Verify deployments
-4. Clean up resources
+1. Setup Kubernetes workspace
+2. Setup Consul workspace
+3. Setup Vault workspace
+4. Deploy Kubernetes, Consul and Vault
+5. Verify deployments
+6. Clean up resources
 
 
 By the end of this scenario, you will accomplish three things using Terraform Cloud run triggers.
