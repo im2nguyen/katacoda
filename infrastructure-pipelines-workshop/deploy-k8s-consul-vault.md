@@ -1,6 +1,6 @@
 ## Deploy Kubernetes, Consul, and Vault
 
-Now that you have successfully configured all three workspaces (Kubernetes, Consul, and Vault), you can deploy Consul instance and Vault instance.
+Now that you have successfully configured all three workspaces (Kubernetes, Consul, and Vault), you can deploy your Consul instance and Vault instance.
 
 Verify that your Kubernetes cluster has been provisioned before starting this guide.
 

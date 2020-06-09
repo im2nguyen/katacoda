@@ -12,7 +12,7 @@ The command output will ask you if you want to confirm that you want to generate
 
 `yes`{{execute}} 
 
-Terraform will prompt you to visit a link in the output. 
+Terraform will prompt you to visit a link in the output.
 
 Follow this link and generate a new token in Terraform cloud. 
 
@@ -20,8 +20,8 @@ Copy the API token from Terraform Cloud and then paste it into the Katacoda term
 
 ## Configure kubectl
 
-Add the following configuration to your KataCoda `main.tf` file, replacing the `organization` and `workspaces` value in [`main.tf`](https://github.com/hashicorp/learn-terraform-pipelines-k8s/blob/master/main.tf). 
-- `organization = "infrastructure-pipelines-workshop"`
+Add the following configuration to your KataCoda `main.tf` file, replacing the `workspaces` value in [`main.tf`](https://github.com/hashicorp/learn-terraform-pipelines-k8s/blob/master/main.tf). 
+
 - `workspaces   = "{firstName}-{lastInitial}-k8s"`
 
 This will establish a connection to your Kubernetes workspace. 
@@ -42,7 +42,7 @@ Then, initialize your Terraform workspace.
 
 `terraform init`{{execute}} 
 
-Run the following command. It will save your Kubernetes workspace's `kubeconfig` output value into a file named `kubeconfig`. This will allow you to connect to your cluster.
+Save your Kubernetes workspace's `kubeconfig` output value into a file named `kubeconfig`. This will allow you to connect to your cluster.
 
 `terraform output kubeconfig > kubeconfig`{{execute}} 
 
@@ -54,20 +54,20 @@ Since Vault and Consul are enabled, you should see 5 nodes.
 
 ## Access Consul UI
 
-Run the following command — it forwards port :8500 (Consul UI) to port :8500, allowing you to access it on KataCoda's port 8500.
+Forward port :8500 (Consul UI) to port :8500, allowing you to access it on KataCoda's port 8500.
 
 `kubectl --kubeconfig=kubeconfig -n hashicorp-learn port-forward --address 0.0.0.0 consul-server-0 8500:8500`{{execute}} 
 
-Go to `[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com` to access the Consul UI.
+Click on the "Consul UI" tab in your terminal pane or visit `[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com` in your browser to access the Consul UI.
 
 > **Note:** The Consul UI does not show Vault in the list of services because its service_registration stanza in the Helm chart defaults to Kubernetes. However, Vault is still configured to use Consul as a backend.
 
 ## Access Vault UI
 
-Run the following command — it forwards port :8200 (Vault UI) to port :8200, allowing you to access it on KataCoda's port 8200.
+Open a new tab in the Katacoda terminal pane and forward port :8200 (Vault UI) to port :8200, allowing you to access it on KataCoda's port 8200.
 
 `kubectl --kubeconfig=kubeconfig -n hashicorp-learn port-forward --address 0.0.0.0 hashicorp-learn-vault-0 8200:8200`{{execute T2}}
 
-Go to `[[HOST_SUBDOMAIN]]-8200-[[KATACODA_HOST]].environments.katacoda.com` to access the Vault UI.
+Go to the Vault UI tab in the Katacoda terminal pane or visit `[[HOST_SUBDOMAIN]]-8200-[[KATACODA_HOST]].environments.katacoda.com` in your browser to access the Vault UI.
 
-> **Note:** The Vault pods have warnings because it’s sealed. To learn how to unseal the Vault instance, reference the [CLI initialize and unseal documentation for Vault](https://www.vaultproject.io/docs/platform/k8s/helm/run#initialize-and-unseal-vault). Do **not** do this in the workshop.
+> **Note:** The Vault pods have warnings because Vault is sealed. Do **not** unseal Vault during this workshop. You can learn how to unseal Vault in the [CLI initialize and unseal documentation for Vault](https://www.vaultproject.io/docs/platform/k8s/helm/run#initialize-and-unseal-vault), and can try it on your own by reproducing this lab locally, following [this tutorial](https://learn.hashicorp.com/terraform/kubernetes/consul-vault-kubernetes-run-triggers).

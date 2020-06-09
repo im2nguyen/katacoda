@@ -63,7 +63,7 @@ Select your Kubernetes workspace and click "Queue Plan". If the plan is successf
 
 Click "Confirm & Apply" to apply this configuration. This process should take about 10 minutes to complete. 
 
-While your Kubernetes cluster is deploy, continue onto the next step and configure your Consul workspace.
+While your Kubernetes cluster deploying, continue onto the next step and configure your Consul workspace.
 
 ## Next steps
 
