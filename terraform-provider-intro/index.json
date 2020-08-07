@@ -1,9 +1,9 @@
 {
-  "title": "Getting Started with Terraform Consul Provider ",
-  "description": "Getting Started with Terraform Consul Provider",
-  "difficulty": "Advanced",
+  "title": "Perform CRUD operations with Providers",
+  "description": "Interact with APIs using Terraform providers. In this lab, use a provider as a bridge between Terraform and a target API.",
+  "difficulty": "Beginner",
   "time": "20",
-  "icon": "fa-consul",
+  "icon": "fa-terraform",
   "details": {
     "steps": [
       {
@@ -22,22 +22,12 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "showdashboard": true,
-    "dashboards": [
-      {
-        "name": "Consul UI",
-        "port": 8500
-      },
-      {
-        "name": "Dashboard Instance",
-        "port": 8080
-      },
-      {
-        "name": "Counting Instance",
-        "port": 9001
-      }
-    ],
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands version 0.1.\u001b[m\r\n"
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands version 0.1.\u001b[m\r\n",
+    "hideHiddenFiles": true,
+    "uieditorpath": "~/learn-terraform-hashicups-provider",
+    "exclusionPatterns": [
+      "./terraform/*"
+    ]
   },
   "backend": {
     "imageid": "ubuntu"
