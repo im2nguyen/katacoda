@@ -1,1 +1,3 @@
-To learn more about Vault, refer to [Vault Guides](https://learn.hashicorp.com/vault).
+# Congrats you've completed this guide! 
+
+Please minimize this window.

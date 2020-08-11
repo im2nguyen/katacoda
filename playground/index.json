@@ -1,36 +1,35 @@
 {
-  "pathwayTitle": "Learn HashiCorp Vault",
-  "title": "Vault Playground",
-  "description": "HashiCorp Vault environment to explore Vault CLI",
-  "difficulty": "beginner",
-  "icon": "fa-vault",
+  "title": "Terraform + LocalStack Playground",
+  "description": "Generic Terraform playground with Terraform and LocalStack (local AWS) installed",
+  "difficulty": "Beginner",
+  "time": "20",
+  "icon": "fa-terraform",
   "details": {
     "steps": [
       {
-        "title": "Example Commands",
-        "text": "getting-started.md",
-        "code": "terminal.sh",
-        "courseData": "courseBase.sh"
+        "text": "overview.md"
       }
     ],
     "intro": {
       "text": "intro.md",
-      "credits": "https://www.vaultproject.io"
+      "code": "courseBase.sh",
+      "credits": "https://learn.hashicorp.com/terraform"
     },
     "finish": {
       "text": "finish.md",
-      "credits": "https://www.vaultproject.io"
+      "credits": "https://learn.hashicorp.com/terraform"
     }
   },
   "environment": {
-    "uilayout": "terminal",
-    "showdashboard": true,
-    "dashboards": [
-      { "name": "Vault UI", "port": 8200 }
-    ],
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands version 0.1.\u001b[m\r\n"
+    "uilayout": "editor-terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands version 0.1.\u001b[m\r\n",
+    "hideHiddenFiles": true,
+    "uieditorpath": "~",
+    "exclusionPatterns": [
+      "./terraform/*"
+    ]
   },
   "backend": {
-    "imageid": "hashicorp-hashistack"
+    "imageid": "ubuntu:2004"
   }
 }
