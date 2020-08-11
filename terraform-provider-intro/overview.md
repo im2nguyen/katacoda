@@ -49,4 +49,4 @@ Now that the HashiCups API is running, navigate to the `learn-terraform-hashicup
 
 `terraform init`{{execute T2}}
 
-This downloads all providers listed in the `required_providers` argument in `main.tf`{{open}}. The HashiCups provider has already been downloaded and installed in its respective directory: `~/.terraform.d/plugins/hashicorp.com/edu/hashicups/0.2/linux_amd64`
+This downloads all providers listed in the `required_providers` argument in `~/learn-terraform-hashicups-provider/main.tf`{{open}}. The HashiCups provider has already been downloaded and installed in its respective directory: `~/.terraform.d/plugins/hashicorp.com/edu/hashicups/0.2/linux_amd64`
