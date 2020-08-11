@@ -23,7 +23,7 @@ services:
 " > docker-compose.yml
 
 # Run localstack in daemon
-docker-compose up
+docker-compose up -d
 
 clear
 
