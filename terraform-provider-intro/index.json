@@ -7,7 +7,9 @@
   "details": {
     "steps": [
       {
-        "text": "overview.md"
+        "title": "Overview",
+        "text": "overview.md",
+        "verify": "provision.verify.sh"
       }
     ],
     "intro": {
