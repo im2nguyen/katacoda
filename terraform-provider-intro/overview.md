@@ -5,6 +5,7 @@ In this scenario, you use a Terraform provider to interact with a fictional coff
 1. Initialize Terraform Workspace
 1. Create a HashiCups order
 1. Update a HashiCups order
+1. Read coffee ingredients (data source)
 1. Delete a HashiCups order
 
 This scenario includes a pre-installed Terraform 0.13, a pre-installed Terraform HashiCups provider and an instance of the HashiCups API running.

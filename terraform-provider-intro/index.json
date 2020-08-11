@@ -10,6 +10,22 @@
         "title": "Overview",
         "text": "overview.md",
         "verify": "provision.verify.sh"
+      },
+      {
+        "title": "Create HashiCups order",
+        "text": "order-create.md"
+      },
+      {
+        "title": "Update HashiCups order",
+        "text": "order-update.md"
+      },
+      {
+        "title": "Read Coffee Ingredients",
+        "text": "read-coffee-ingredients.md"
+      },
+      {
+        "title": "Delete HashiCups order",
+        "text": "order-delete.md"
       }
     ],
     "intro": {
