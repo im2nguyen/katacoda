@@ -10,3 +10,7 @@ cd ~/learn-terraform-hashicups-provider/docker_compose
 
 # Run Docker Compose up
 docker-compose up
+
+clear
+
+echo "Ready!"

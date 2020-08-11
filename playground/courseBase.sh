@@ -24,3 +24,7 @@ services:
 
 # Run localstack in daemon
 docker-compose up
+
+clear
+
+echo "Ready!"
