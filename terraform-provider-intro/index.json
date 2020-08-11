@@ -9,7 +9,7 @@
       {
         "title": "Overview",
         "text": "overview.md",
-        "verify": "provision.verify.sh"
+        "verify": "hashicups.verify.sh"
       },
       {
         "title": "Create HashiCups order",
