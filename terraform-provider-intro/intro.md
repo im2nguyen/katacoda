@@ -1,3 +1,3 @@
 In this scenario, you use a Terraform provider to interact with a fictional coffee-shop application, HashiCups. In the process, you will learn how providers map target APIs to Terraform in order to create, read, update and delete resources.
 
-This scenario is meant to serve as a companion lab for the [Perform CRUD operations with Providers Learn guide](https://deploy-preview-1641--hashicorp-learn.netlify.app/tutorials/terraform/provider-use?in=terraform/providers).
+This scenario is meant to serve as a companion lab for the [Perform CRUD operations with Providers Learn guide](https://learn.hashicorp.com/tutorials/terraform/provider-use?in=terraform/providers).

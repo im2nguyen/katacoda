@@ -1,0 +1,1 @@
+Terraform Playground with localstack installed
