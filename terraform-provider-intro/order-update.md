@@ -1,8 +1,8 @@
-Change your order by updating the order resource through Terraform. In your `~/learn-terraform-hashicups-provider/main.tf`, update the coffee quantity in `hashicups_order.edu` block.
+Change your order by updating the order resource through Terraform. In your `main.tf`, update the coffee quantity in `hashicups_order.edu` block.
 
 Change the first coffee item from `2` to `3` and change the second coffee item from `2` to `1`.
 
-<pre class="file" data-filename="~/learn-terraform-hashicups-provider/main.tf">
+<pre class="file" data-filename="main.tf">
 resource "hashicups_order" "edu" {
   items {
     coffee {

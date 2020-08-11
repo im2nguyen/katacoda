@@ -1,6 +1,6 @@
-Add the following to your `~/learn-terraform-hashicups-provider/main.tf`{{open}} file. This will retrieve ingredients for the first coffee from your order. The `data block` retrieves additional information about a resource, which enables it to be referenced by another Terraform resource. In this example, it's used by an `output` block to display the coffee ingredients.
+Add the following to your `main.tf`{{open}} file. This will retrieve ingredients for the first coffee from your order. The `data block` retrieves additional information about a resource, which enables it to be referenced by another Terraform resource. In this example, it's used by an `output` block to display the coffee ingredients.
 
-<pre class="file" data-filename="~/learn-terraform-hashicups-provider/main.tf" data-target="append">
+<pre class="file" data-filename="main.tf" data-target="append">
 data "hashicups_ingredients" "first_coffee" {
   coffee_id = hashicups_order.edu.items[0].coffee[0].id
 }

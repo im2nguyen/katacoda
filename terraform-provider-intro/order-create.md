@@ -1,8 +1,8 @@
 Now that you have initialized your Terraform workspace, you will create the order using Terraform.
 
-Add the following to your `~/learn-terraform-hashicups-provider/main.tf`{{open}} file.
+Add the following to your `main.tf`{{open}} file.
 
-<pre class="file" data-filename="~/learn-terraform-hashicups-provider/main.tf" data-target="append">
+<pre class="file" data-filename="main.tf" data-target="append">
 provider "hashicups" {
   username = "education"
   password = "test123"

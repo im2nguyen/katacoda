@@ -6,7 +6,8 @@ unzip terraform_0.13.0-rc1_linux_amd64.zip -d /usr/local/bin/
 
 # Clone docker compose files
 git clone -b katacoda https://github.com/hashicorp/learn-terraform-hashicups-provider
-cd ~/learn-terraform-hashicups-provider/docker_compose
+mv ~/learn-terraform-hashicups-provider ~/learn
+cd ~/learn/docker_compose
 
 # Install HashiCups provider 
 curl -Lo terraform-provider-hashicups https://github.com/hashicorp/terraform-provider-hashicups/releases/download/v0.2/terraform-provider-hashicups_0.2_linux_amd64

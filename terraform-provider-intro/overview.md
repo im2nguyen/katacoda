@@ -43,10 +43,10 @@ Now that the HashiCups app is running, you're ready to interact with it using th
 
 ### Initialize Terraform workspace
 
-Now that the HashiCups API is running, navigate to the `learn-terraform-hashicups-provider` directory before initializing your Terraform workspace.
+Now that the HashiCups API is running, navigate to the `learn` directory before initializing your Terraform workspace.
 
-`cd learn-terraform-hashicups-provider`{{execute T2}}
+`cd learn`{{execute T2}}
 
 `terraform init`{{execute T2}}
 
-This downloads all providers listed in the `required_providers` argument in `~/learn-terraform-hashicups-provider/main.tf`{{open}}. The HashiCups provider has already been downloaded and installed in its respective directory: `~/.terraform.d/plugins/hashicorp.com/edu/hashicups/0.2/linux_amd64`
+This downloads all providers listed in the `required_providers` argument in `main.tf`{{open}}. The HashiCups provider has already been downloaded and installed in its respective directory: `~/.terraform.d/plugins/hashicorp.com/edu/hashicups/0.2/linux_amd64`
