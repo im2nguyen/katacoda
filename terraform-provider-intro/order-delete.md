@@ -1,5 +1,3 @@
-## Delete HashiCups order
-
 Finally, you can delete resources in Terraform. Run `terraform destroy`. 
 
 `terraform destroy`{{execute T2}}

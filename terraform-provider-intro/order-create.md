@@ -1,5 +1,3 @@
-## Create HashiCups order
-
 Now that you have initialized your Terraform workspace, you will create the order using Terraform.
 
 Add the following to your `main.tf`{{open}} file.

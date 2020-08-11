@@ -1,5 +1,3 @@
-## Overview
-
 In this scenario, you use a Terraform provider to interact with a fictional coffee-shop application, HashiCups, by completing the following actions:
 
 1. Initialize Terraform Workspace
@@ -45,7 +43,9 @@ Now that the HashiCups app is running, you're ready to interact with it using th
 
 ### Initialize Terraform workspace
 
-Now that the HashiCups API is running, initialize your Terraform workspace.
+Now that the HashiCups API is running, navigate to the `learn-terraform-hashicups-provider` directory before initializing your Terraform workspace.
+
+`cd learn-terraform-hashicups-provider`{{execute T2}}
 
 `terraform init`{{execute T2}}
 
