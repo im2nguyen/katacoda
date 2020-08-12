@@ -63,13 +63,3 @@ api_1  | 2020-07-16T09:20:21.601Z [INFO]  Handle User | signin
 ```
 
 Now that you have created a HashiCups user, you're ready to use the Terraform provider to interact with the API.
-
-### Initialize Terraform workspace
-
-Navigate to the `learn-terraform-hashicups-provider` directory and initialize your Terraform workspace.
-
-`cd learn-terraform-hashicups-provider`{{execute T2}}
-
-`terraform init`{{execute T2}}
-
-This downloads all providers listed in the `required_providers` argument in `main.tf`{{open}}. This lab's initialization script downloaded the HashiCups provider installed to the following directory: `~/.terraform.d/plugins/hashicorp.com/edu/hashicups/0.2/linux_amd64`
