@@ -32,5 +32,6 @@
   },
   "backend": {
     "imageid": "bash"
-  }
+  },
+  "private": true
 }

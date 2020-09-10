@@ -35,5 +35,6 @@
   },
   "backend": {
     "imageid": "minikube-running"
-  }
+  },
+  "private": true
 }
