@@ -6,7 +6,7 @@ unzip terraform_0.13.2_linux_amd64.zip -d /usr/local/bin/
 
 # Clone docker compose files
 git clone -b hashiconf-2020 https://github.com/hashicorp/terraform-provider-hashicups
-cd ~/learn-terraform-hashicups-provider/docker_compose
+cd ~/terraform-provider-hashicups/docker_compose
 
 # Prevent `yes` command from accidentally being run
 alias yes=""
