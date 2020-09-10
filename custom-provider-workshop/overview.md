@@ -1,6 +1,6 @@
 In this scenario, you will use a Terraform provider to interact with a fictional coffee-shop application, HashiCups, by completing the following actions:
 
-1. Initialize Terraform Workspace
+1. <b>Initialize Terraform Workspace</b>
 1. Create a HashiCups order
 1. Update a HashiCups order
 1. Read coffee ingredients (data source)
