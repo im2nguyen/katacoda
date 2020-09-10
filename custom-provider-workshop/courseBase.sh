@@ -12,4 +12,4 @@ cd ~/terraform-provider-hashicups/docker_compose
 alias yes=""
 
 # Run Docker Compose up
-docker-compose up
+# docker-compose up
