@@ -1,6 +1,6 @@
 In this scenario, you will use a Terraform provider to interact with a fictional coffee-shop application, HashiCups, by completing the following actions:
 
-1. <b>Initialize Terraform Workspace</b>
+1. Initialize Terraform Workspace
 1. Create a HashiCups order
 1. Update a HashiCups order
 1. Read coffee ingredients (data source)
@@ -9,6 +9,37 @@ In this scenario, you will use a Terraform provider to interact with a fictional
 This scenario includes a pre-installed Terraform 0.13, a pre-installed Terraform HashiCups provider and an instance of the HashiCups API running locally.
 
 Do not stop the HashiCups API running in the first terminal. You will reference these logs to verify the endpoints the HashiCups provider calls.
+
+<details>
+  <summary>Hint</summary>
+  <pre class="file" data-filename="main.tf" data-target="append">
+    provider "hashicups" {
+      username = "education"
+      password = "test123"
+    }
+
+    resource "hashicups_order" "edu" {
+      items {
+        coffee {
+          id = 3
+        }
+        quantity = 2
+      }
+      items {
+        coffee {
+          id = 2
+        }
+        quantity = 2
+      }
+    }
+
+    output "edu_order" {
+      value = hashicups_order.edu
+    }
+  </pre>
+
+</details>
+
 
 ### Verify HashiCups API is running
 
