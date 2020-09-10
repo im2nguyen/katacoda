@@ -40,6 +40,10 @@ Do not stop the HashiCups API running in the first terminal. You will reference 
 
 </details>
 
+</br>
+</br>
+</br>
+
 
 ### Verify HashiCups API is running
 
