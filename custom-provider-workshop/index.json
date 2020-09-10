@@ -8,8 +8,7 @@
     "steps": [
       {
         "title": "Overview",
-        "text": "overview.md",
-        "verify": "hashicups.verify.sh"
+        "text": "overview.md"
       },
       {
         "title": "Create HashiCups order",

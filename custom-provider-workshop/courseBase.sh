@@ -11,5 +11,8 @@ cd ~/terraform-provider-hashicups/docker_compose
 # Prevent `yes` command from accidentally being run
 alias yes=""
 
+clear
+
+echo "Ready"
 # Run Docker Compose up
 # docker-compose up
