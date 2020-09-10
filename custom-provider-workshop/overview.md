@@ -10,7 +10,7 @@ This scenario includes a pre-installed Terraform 0.13, a pre-installed Terraform
 
 Do not stop the HashiCups API running in the first terminal. You will reference these logs to verify the endpoints the HashiCups provider calls.
 
-<details>
+<details style="padding-bottom: 1em">
   <summary>Hint</summary>
   <pre class="file" data-filename="main.tf" data-target="append">
     provider "hashicups" {
@@ -39,11 +39,6 @@ Do not stop the HashiCups API running in the first terminal. You will reference 
   </pre>
 
 </details>
-
-</br>
-</br>
-</br>
-
 
 ### Verify HashiCups API is running
 
