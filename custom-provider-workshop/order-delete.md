@@ -1,22 +1,21 @@
-Finally, you can delete resources in Terraform. Run `terraform destroy`. 
+In this step, you will add delete capabilities to the order resource.
 
-`terraform destroy`{{execute T2}}
-
-Remember to confirm the apply step with a `yes`{{execute T2}}.
-
-When the destroy step completes, the provider has destroyed the order resource, reflected by an empty state file.
-
-
-### Verify order deleted
-
-Verify the order was deleted by retrieving the order details via the API. 
-
-`curl -X GET  -H "Authorization: ${HASHICUPS_TOKEN}" localhost:19090/orders/1 | jq`{{execute T2}}
-
-The response will look similar to the following.
+Replace the `resourceOrderDelete` function in `hashicups/resource_order.go`{{open}} with the code snippet below. This function will delete the HashiCups order and Terraform resource.
 
 ```
-{}
-```
+func resourceOrderDelete(ctx context.Context, d *schema.ResourceData, m interface{}) diag.Diagnostics {
+  c := m.(*hc.Client)
 
-The order is blank, as expected.
+  // Warning or errors can be collected in a slice type
+  var diags diag.Diagnostics
+
+  orderID := d.Id()
+
+  err := c.DeleteOrder(orderID)
+  if err != nil {
+    return diag.FromErr(err)
+  }
+
+  return diags
+}
+```

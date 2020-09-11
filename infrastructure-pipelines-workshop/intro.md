@@ -9,7 +9,6 @@ This workshop comprises of six main steps, estimated to take a total of 45 minut
 5. Verify deployments
 6. Clean up resources
 
-
 By the end of this scenario, you will accomplish three things using Terraform Cloud run triggers.
 
 - Deploy a Kubernetes cluster on Google Cloud.

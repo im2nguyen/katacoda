@@ -11,20 +11,32 @@
         "text": "overview.md"
       },
       {
-        "title": "Create HashiCups order",
+        "title": "Define `order` schema",
+        "text": "order-schema.md"
+      },
+      {
+        "title": "Add create functionality",
         "text": "order-create.md"
       },
       {
-        "title": "Update HashiCups order",
+        "title": "Add complex read functionality",
+        "text": "order-read.md"
+      },
+      {
+        "title": "Add update functionality",
         "text": "order-update.md"
       },
       {
-        "title": "Read Coffee Ingredients",
-        "text": "read-coffee-ingredients.md"
+        "title": "Add delete functionality",
+        "text": "order-delete.md"
       },
       {
-        "title": "Delete HashiCups order",
-        "text": "order-delete.md"
+        "title": "Verity HashiCups provider functionality",
+        "text": "verify-hashicups-order.md"
+      },
+      {
+        "title": "Publish to Terraform Registry",
+        "text": "publish-terraform-registry.md"
       }
     ],
     "intro": {
