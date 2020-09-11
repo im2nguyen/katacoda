@@ -15,8 +15,18 @@ Your development environment contains the following.
 `hashicups/resource_order.go`{open} defines `resourceOrder()` and contains boilerplate and comments to guide you through adding CRUD capabilities to an existing provider.
 
 ## Katacoda Notes
+
 Any changes to the file using the file editor will be automatically saved.
 
+## Initialize your developer environment
+
+First, run the `go mod init` command to define this directory as the root of a module.
+
+`go mod init terraform-provider-hashicups`{{execute}}
+
+Then, run go mod vendor to create a vendor directory that contains all the provider's dependencies.
+
+`go mod vendor`{{execute}}
 
 ## Add `order` resource to provider
 
