@@ -4,7 +4,8 @@ The [HashiCups API Client](https://github.com/hashicorp-demoapp/hashicups-client
 
 <details style="padding-bottom: 1em;" open>
 <summary>HashiCups Order Definition</summary>
-<pre>
+
+```
 // Order -
 type Order struct {
 	ID    int         `json:"id,omitempty"`
@@ -26,7 +27,7 @@ type Coffee struct {
 	Price       float64      `json:"price"`
 	Image       string       `json:"image"`
 }
-</pre>
+```
 </details>
 
 ## Define Order schema
@@ -68,19 +69,20 @@ Define the `coffee` schema inside the `item`'s `Elem` Property. The schema shoul
 
 <details style="padding-bottom: 1em;">
 <summary>Hint</summary>
-```diff
+
+```
 items": &schema.Schema{
     Type:     schema.TypeList,
     Required: true,
     Elem: &schema.Resource{
-+     Schema: map[string]*schema.Schema{
-+       "coffee": &schema.Schema{
-+         Type:     schema.TypeList,
-+         MaxItems: 1,
-+         Required: true,
-+         Elem: &schema.Resource{}
-+       }
-+     }
+        Schema: map[string]*schema.Schema{
+            "coffee": &schema.Schema{
+                Type:     schema.TypeList,
+                MaxItems: 1,
+                Required: true,
+                Elem: &schema.Resource{}
+            }
+        }
     }
 }
 ```
@@ -99,42 +101,45 @@ Each property type maps to an appropriate `schema.Type`. To create a new order, 
 | price       | float64 | schema.TypeInt    | Computed |
 | image       | string  | schema.TypeString | Computed |
 
+
 <details style="padding-bottom: 1em;">
 <summary>Hint</summary>
-```diff
+
+```
 "coffee": &schema.Schema{
     Type:     schema.TypeList,
     MaxItems: 1,
     Required: true,
     Elem: &schema.Resource{
-+       Schema: map[string]*schema.Schema{
-+           "id": &schema.Schema{
-+               Type:     schema.TypeInt,
-+               Required: true,
-+           },
-+           "name": &schema.Schema{
-+               Type:     schema.TypeString,
-+               Computed: true,
-+           },
-+           "teaser": &schema.Schema{
-+               Type:     schema.TypeString,
-+               Computed: true,
-+           },
-+           "description": &schema.Schema{
-+               Type:     schema.TypeString,
-+               Computed: true,
-+           },
-+           "price": &schema.Schema{
-+               Type:     schema.TypeInt,
-+               Computed: true,
-+           },
-+           "image": &schema.Schema{
-+               Type:     schema.TypeString,
-+               Computed: true,
-+           },
-+       },
+       Schema: map[string]*schema.Schema{
+           "id": &schema.Schema{
+               Type:     schema.TypeInt,
+               Required: true,
+           },
+           "name": &schema.Schema{
+               Type:     schema.TypeString,
+               Computed: true,
+           },
+           "teaser": &schema.Schema{
+               Type:     schema.TypeString,
+               Computed: true,
+           },
+           "description": &schema.Schema{
+               Type:     schema.TypeString,
+               Computed: true,
+           },
+           "price": &schema.Schema{
+               Type:     schema.TypeInt,
+               Computed: true,
+           },
+           "image": &schema.Schema{
+               Type:     schema.TypeString,
+               Computed: true,
+           },
+       },
     },
 },
+```
 </details>
 
 #### Define quantity schema
