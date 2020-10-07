@@ -61,10 +61,16 @@ follow these steps to grant Terraform Cloud access to the repository.<br/>
 <br/>
 <ol type="1">
     1. Log in to [GitHub](https://github.com).
+
     1. Navigate to your user profile settings by clicking on your profile picture in the upper right, and choosing "Settings" from the menu.
+
     1. On the settings page, select "Applications" from the menu on the left.
+
     1. "Terraform Cloud" should be listed here. Click the "Configure" button next to it.
+    
         - If "Terraform Cloud" does not appear, then Terraform Cloud has not been configured to access GitHub. Return to Terraform Cloud to connect it to GitHub as described above.
+
     1. On the next page, you can either grant Terraform Cloud access to all of your GitHub repositories, or use the "Only select repositories" interface to select the repository you forked earlier.
+    
     1. If you only grant access to select repositories, you will need to repeat the last step for all three of the repositories used in this workshop.
 </details>
