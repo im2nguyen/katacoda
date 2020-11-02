@@ -12,7 +12,11 @@ git clone -b localstack https://github.com/hashicorp/learn-terraform-code-organi
 cd ~/learn-terraform-code-organization
 
 # Run Docker Compose up (daemon)
-docker-compose up -d
+# docker-compose up -d
+
+# Install localstack (don't run dockerfile on katacoda)
+pip3 install localstack
+localstack start &>output.log &
 
 # Prevent `yes` command from accidentally being run
 alias yes=""
