@@ -16,7 +16,7 @@ cd ~/learn-terraform-code-organization
 
 # Install localstack (don't run dockerfile on katacoda)
 pip3 install localstack
-localstack start &>output.log &
+localstack start &>localstack-output.log &
 
 # Prevent `yes` command from accidentally being run
 alias yes=""
