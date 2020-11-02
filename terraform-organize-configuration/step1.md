@@ -1,7 +1,7 @@
 In this step, you will create two S3 buckets configured for static website
 hosting using a monolithic configuration.
 
-## Configure AWS Provider
+## Review AWS Provider
 
 Open `main.tf`{{open}}. Your configuration begins with the AWS provider block
 below.
