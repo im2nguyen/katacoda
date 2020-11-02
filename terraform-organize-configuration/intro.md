@@ -12,4 +12,5 @@ refactoring it using four strategies:
 > This environment has been pre-configured with the Terraform CLI, AWS CLI and 
 [localstack](https://localstack.cloud/), a mocking framework that provides a 
 testing environment on your local machine that provides the same functionality 
-and APIs as the real AWS cloud environment.
+and APIs as the real AWS cloud environment. As a result, you do not need an AWS
+account to complete this scenario.
