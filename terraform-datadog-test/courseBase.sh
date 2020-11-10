@@ -36,4 +36,6 @@ cp /tmp/repo/kubernetes.tf /root/
 
 cd /root/
 
+clear
+
 echo "Ready!"
