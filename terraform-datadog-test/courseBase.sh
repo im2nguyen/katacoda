@@ -4,8 +4,6 @@
 source <(helm completion bash)
 source <(minikube completion bash)
 
-minikube addons enable metrics-server
-
 # fetch Terraform archive
 curl -O  https://releases.hashicorp.com/terraform/0.13.5/terraform_0.13.5_linux_amd64.zip
 
