@@ -1,5 +1,5 @@
 {
-   "title": "Deploy Datadog monitors with Terraform",
+   "title": "Deploy Datadog monitors with Terraform (test)",
    "description": "Automating Datadog deployments with Terraform",
    "icon": "fa-terraform",
    "difficulty": "Intermediate",
@@ -43,7 +43,7 @@
       "dashboards": [
          {
             "name": "View Beacon",
-            "href": "https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/"
+            "port": 30201
          }
       ],
       "hideintro": false,
