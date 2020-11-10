@@ -51,7 +51,8 @@
       "showdashboard": true,
       "exclusionPatterns": [
          "*/Desktop",
-         "*/Desktop/*"
+         "*/Desktop/*",
+         "*/katacoda-finished"
       ],
       "uilayout": "editor-terminal",
       "uieditorpath": "/root/"
