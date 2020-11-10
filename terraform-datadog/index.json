@@ -50,8 +50,8 @@
       "hideHiddenFiles": true,
       "showdashboard": true,
       "exclusionPatterns": [
-         "/root/Desktop",
-         "/root/go"
+         "*/Desktop",
+         "*/Desktop/*"
       ],
       "uilayout": "editor-terminal",
       "uieditorpath": "/root/"
